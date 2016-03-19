@@ -1,0 +1,54 @@
+<%- layout('template2') -%>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+
+
+
+    <% if (!user) {%>
+
+        <div class="jumbotron">
+            <div class="container overlay">
+                <h1 class="display-3">Elite Superhero Club</h1>
+                <h3>Do you want to join the underground club for superheroes?</h3>
+                <p><a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up &raquo;</a></p>
+            </div>
+        </div>
+        <div class="container centeralign">
+            <h2>Access this section once you <a href="/login">login!</a></h2>
+        </div>
+
+        <%} else { %>
+
+            <div class="jumbotron">
+                <div class="container overlay">
+                    <h2>Welcome to...</h2>
+                    <h1 class="display-3">Elite Superhero Club</h1>
+
+                    <!--<p><a class="btn btn-primary btn-lg" href="/signup" role="button">Sign Up &raquo;</a></p>-->
+                </div>
+            </div>
+
+            <div class=" exclusive">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="col-md-4 typeone">
+                        <h2>Exclusive Content</h2>
+                        <p>Only Found Here</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4 typetwo">
+                        <h2>Secret Identity</h2>
+                        <p>Revealed!!!</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4 typeone">
+                        <h2>Hero Meetings</h2>
+                        <p>Where Great Decisions are Made</p>
+                        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <% } %>

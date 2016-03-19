@@ -1,0 +1,112 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+a,
+.blue {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.display-3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.nav .rightside {
+    float: right;
+}
+
+.nav .categories {
+    float: left;
+}
+
+.nav li {
+    display: inline;
+}
+
+.dropdown-menu {
+    position: relative;
+    float: none;
+    /* text-align: center;*/
+    min-width: 0;
+    border: none;
+}
+
+.navbar-nav .nav-item {
+    float: right;
+    padding: 1%;
+}
+
+.centeralign {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+.dropdown-toggle {}
+
+footer {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.profilepic {
+    max-width: 250px;
+    width: 100%;
+}
+
+.jumbotron {
+    background: url('https://images.unsplash.com/photo-1447678523326-1360892abab8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f2c48f62e3ccbc0948518b2188118f95') no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.exclusive {
+    text-align: center;
+    background-color: black;
+    padding: 2%;
+    margin-top: -33px;
+}
+
+.overlay {
+    position: relative;
+    background-color: black;
+    opacity: 0.8;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.typeone {
+    background-color: navy;
+    color: darkorange;
+}
+
+.typetwo {
+    background-color: darkorange;
+    color: navy;
+}
+
+.typeone,
+.typetwo {
+    padding: 2%;
+}
+
+.red {
+    color: red;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+
+/*.nav li {
+    display: inline;
+    width: 200px;
+}*/

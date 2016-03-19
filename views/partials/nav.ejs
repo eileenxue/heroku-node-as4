@@ -1,0 +1,73 @@
+<nav class="navbar navbar-light bg-faded">
+    <!--<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+    &#9776;
+</button>-->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">Superhero Club</a>
+        <!--<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">-->
+
+
+    </div>
+
+
+
+    <ul class="nav navbar-nav navbar-right">
+
+        <!-- <li id="categories"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories</a>
+            <ul class="dropdown-menu">
+                <% for (var i=0; i < categories.length; i++){ %>
+                    <li>
+                        <a>
+                            <%= categories[i].name %>
+                        </a>
+                    </li>
+                    <%}%>
+            </ul>
+
+        </li>-->
+
+
+
+        <% if (!user) {%>
+            <!--<li class="rightside"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign Up/Login</a>
+                <ul class="dropdown-menu">-->
+            <li class="nav-item"><a class="nav-link" href="/signup">Sign Up</a></li>
+            <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+
+            <!--</ul>
+
+            </li>-->
+
+            <%} else { %>
+
+                <h3 class="nav-item blue">
+                   Welcome 
+                        <%= user.profile.name %>
+                    
+                </h3>
+                <li class="nav-item">
+                    <a class="nav-link" href="/profile">Your Profile</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+
+
+
+                <% } %>
+    </ul>
+    <!--</div>-->
+</nav>
+
+
+
+<!--<nav class="navbar navbar-inverse navbar-static-top navbar-light bg-faded">
+    <div class="container">
+        <a href="/" class="navbar-brand">Hello</a>
+
+
+
+       
+
+
+
+    </div>
+</nav>-->
